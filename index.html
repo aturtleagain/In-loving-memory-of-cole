@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Full Page PDF Viewer</title>
+  <style>
+    /* Remove default margin and padding to let iframe fill whole page */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent scrollbars */
+    }
+
+    /* Make iframe occupy full viewport */
+    iframe {
+      border: none;
+      width: 100vw;  /* Viewport width */
+      height: 100vh; /* Viewport height */
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace 'yourfile.pdf' with your PDF file path or URL -->
+  <iframe src="COLE AND MARM.pdf" title="PDF Viewer"></iframe>
+</body>
+</html>
